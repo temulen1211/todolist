@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List App</title>
+</head>
+<body>
+    <div class="container" style="max-width: 500px">
+        <h2 class="text-center">To Do List App</h2>
+        <p id="demo"></p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="input your task" aria-label="Todo-list" aria-describedby="button-addon2">
+            <button class="btn btn-outline-warning" type="button" id="button-addon2">Add</button>
+        </div>
+        <h2 class="text-center">Lists</h2>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+           A list item
+            <span class="badge bg-primary rounded-pill">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-light">Edit</button>
+                  <button type="button" class="btn btn-secondary">Done</button>
+                  <button type="button" class="btn btn-dark">Delete</button>
+              </div>  
+             </span>
+        </div>
+            
+          
+        
+    </div>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+
+
+      
+        </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
